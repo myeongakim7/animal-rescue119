@@ -31,9 +31,12 @@ function App() {
 
   return (
     <>
-      <h1>부산시 동물구조 현황</h1>
-      {/* app.js에 직접 json을 활용할 경우 */}
-      {/* <Items
+      <div className="container">
+        <div className="title">
+          <h1>부산 119 구조 반려동물 조회</h1>
+        </div>
+        {/* app.js에 직접 json을 활용할 경우 */}
+        {/* <Items
         cn={animals[0].cn}
         img={animals[0].ty3Picture}
         sex={animals[0].ty3Sex}
@@ -41,10 +44,11 @@ function App() {
         place={animals[0].ty3Place}
         process={animals[0].ty3Process}
       /> */}
-      {/* 데이터가 있으면 표시하고 없으면 로딩중이라 표시하게 한다 */}
-      {animals ? <Items animals={animals} /> : <p>"로딩중..."</p>}
-      {/* 위의 방식을 쓰고 싶지 않다면 단순하게 아래 코드를 사용해도 된다. */}
-      {/* <Items animals={animals} /> */}
+        {/* 데이터가 있으면 표시하고 없으면 로딩중이라 표시하게 한다 */}
+        {animals ? <Items animals={animals} /> : <p>"로딩중..."</p>}
+        {/* 위의 방식을 쓰고 싶지 않다면 단순하게 아래 코드를 사용해도 된다. */}
+        {/* <Items animals={animals} /> */}
+      </div>
     </>
   );
 }
