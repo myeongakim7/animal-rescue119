@@ -34,10 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "공공 API를 활용",
-  "main": "index.js",
-  "devDependencies": {},
-  "author": "",
-  "license": "ISC"
+  }
 }
