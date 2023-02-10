@@ -62,6 +62,7 @@ function App() {
         </p>
       </div>
       {/* 페이징 */}
+
       {animals.length > 0 ? <Items animals={animals} /> : <p>로딩중...</p>}
       {/* 페이징 */}
       <div className="btn-box">
