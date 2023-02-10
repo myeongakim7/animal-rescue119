@@ -17,5 +17,7 @@
     <img src="/src/images/3.jpg" alt="3">
     <li>Items 컴포넌트 자료 가져올 때 속도가 느릴 수 있어서 '로딩 중'이라고 표시</li>
   </ul>
-  
+  <hr>
+  <h2>산출물 이미지</h2>
+  <img src="./src/images/capture.png" alt="capture">
   
