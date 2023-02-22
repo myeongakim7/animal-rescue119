@@ -63,7 +63,11 @@ function App() {
       </div>
       {/* 페이징 */}
 
-      {animals.length > 0 ? <Items animals={animals} /> : <p>로딩중...</p>}
+      {animals.length > 0 ? (
+        <Items animals={animals} />
+      ) : (
+        <div className="loading">Loading...</div>
+      )}
       {/* 페이징 */}
       <div className="btn-box">
         <button id="btn" onClick={prevPage}>
