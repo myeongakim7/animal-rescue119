@@ -1,6 +1,10 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import Items from "./components/Items";
+import home from "./images/icon-home.svg";
+import search from "./images/icon-search.svg";
+import dog from "./images/icon-dog.svg";
+import click from "./images/icon-search-click.svg";
 
 function App() {
   const [animals, setAnimals] = useState([]); // 동물 데이터
@@ -53,8 +57,23 @@ function App() {
   return (
     <div className="App">
       <div className="title">
-        <h1>부산 119 구조 반려동물 조회</h1>
+        <div className="icon-dog">
+          <img src={dog} alt="dog" />
+        </div>
+        <p>구조 반려동물 조회</p>
       </div>
+      {/* title */}
+      <div className="search-box">
+        <form action="" method="get"></form>
+        <input
+          className="searchContent"
+          type="text"
+          name="searchContent"
+          placeholder="구조장소 검색"
+        />
+        <input type="button" name="searchBtn" className="searchBtn" />
+      </div>
+
       <div className="upper-text">
         <p>Total: {totalCount}건</p>
         <p>
@@ -78,6 +97,21 @@ function App() {
         </button>
       </div>
       {/*btn-box */}
+      <div className="bottom-box">
+        <div className="icon-box">
+          <div className="icon-home">
+            <img src={home} alt="home" />
+          </div>
+        </div>
+        {/* icon-box */}
+        <div className="icon-box">
+          <div className="icon-search">
+            <img src={search} alt="search" />
+          </div>
+        </div>
+        {/* icon-box */}
+      </div>
+      {/* bottom-box*/}
     </div>
   );
 }
