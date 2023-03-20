@@ -16,6 +16,7 @@
 <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 </div>
+<br>
   <h2>Screenshot</h2>
   <img src="./src/images/screenshot.jpg" alt="screenshot">
 <h2>Before update</h2>
