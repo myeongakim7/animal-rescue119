@@ -4,7 +4,6 @@ import Items from "./components/Items";
 import home from "./images/icon-home.svg";
 import search from "./images/icon-search.svg";
 import dog from "./images/icon-dog.svg";
-import click from "./images/icon-search-click.svg";
 
 function App() {
   const [animals, setAnimals] = useState([]); // 동물 데이터
