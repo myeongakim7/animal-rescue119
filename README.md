@@ -1,4 +1,4 @@
-<h2>부산 119 구조 반려동물 조회</h2>
+<h1>부산 119 구조 반려동물 조회</h1>
 <p>Demo:https://web-animal-rescue119-3a9t2bldtzerfu.sel3.cloudtype.app/</p>
 
 <h2>Stack</h2>
@@ -16,13 +16,13 @@
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 </div>
   <h2>Screenshot</h2>
-  <img src="./src/images/capture.png" alt="capture">
+  <img src="./src/images/screenshot.jpg" alt="screenshot">
 <h2>Before update</h2>
   <p>공공 API의 데이터를 불러오기</p>
   <p>개별 데이터로 보여줄 Item 컴퍼넌트 추가</p>
   <p>map 반복문으로 Item 출력</p>
   
-<h3>After update</h3>
+<h2>After update</h2>
   <ul>
     <img src="/src/images/1.jpg" alt="1">
      <h4>upState 함수로 초기값 설정</h4>
