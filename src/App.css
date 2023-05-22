@@ -11,6 +11,35 @@ body {
 :root {
   --main: #6aa864;
 }
+
+.homeBox {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url(../src/images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+}
+.headTitle {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+}
+.headTitle h2 {
+  font-family: "Hahmlet", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Search */
+
 .App {
   max-width: 768px;
   margin: 0 auto;
@@ -143,7 +172,8 @@ figure {
   margin-bottom: 50px;
 }
 /* bottom box */
-.bottom-box {
+/* nav */
+.bottomBox {
   width: 100%;
   height: 70px;
   background-color: #6aa864;
@@ -154,26 +184,26 @@ figure {
   right: 0;
   bottom: 0;
 }
-.bottom-box .icon-box {
+.bottomBox .iconBox {
   width: calc(100% / 2);
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.bottom-box .icon-home {
+.bottomBox .iconHome {
   width: 40px;
   height: 40px;
   cursor: pointer;
 }
-.bottom-box .icon-home img {
+.bottomBox .iconHome img {
   width: 100%;
 }
-.bottom-box .icon-search {
+.bottomBox .iconSearch {
   width: 40px;
   height: 40px;
   cursor: pointer;
 }
-.bottom-box .icon-search img {
+.bottomBox .iconSearch img {
   width: 100%;
 }
