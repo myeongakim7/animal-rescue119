@@ -41,3 +41,11 @@
   </ul>
   
 <img src="https://capsule-render.vercel.app/api?type=wave&color=f4d47b&height=180&section=footer&fontSize=45" />
+
+<h2>23/05/22</h2>
+<ul>
+  <li>aos 스크롤 애니메이션 추가 </li>
+  <li>리액트 라우터 관련 모듈 추가</li> 
+  <li>페이지 연결하기 위해 pages 폴더 생성 후 홈/서치페이지/상세페이지 만들고 연결함 </li>
+  <li> 상세페이지 만들기 위해 useParams() 사용해 파라미터 가져오기  (((상세페이지 만드는 중))))</li>
+</ul>
