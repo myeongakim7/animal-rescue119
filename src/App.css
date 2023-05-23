@@ -12,14 +12,18 @@ body {
   --main: #6aa864;
 }
 
-.homeBox {
-  width: 100vw;
+#home {
+  max-width: 768px;
   height: 100vh;
   margin: 0 auto;
-  background-image: url(../src/images/home.jpg);
+}
+.homeBox {
+  width: 768px;
+  height: 100vh;
+  background-image: url(../src/images/home2.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 .headTitle {
@@ -53,12 +57,12 @@ body {
   gap: 6px;
   align-items: center;
 }
-.App .title .icon-dog {
+.App .title .iconDog {
   width: 25px;
   height: 25px;
   margin-left: 10px;
 }
-.App .title .icon-dog img {
+.App .title .iconDog img {
   width: 100%;
 }
 .App .title p {
@@ -68,7 +72,7 @@ body {
   color: #000;
 }
 
-.App .search-box {
+.App .searchBox {
   width: 90%;
   height: 30px;
   border-radius: 20px;
@@ -78,13 +82,13 @@ body {
   display: flex;
   align-items: center;
 }
-.App .search-box .searchContent {
+.App .searchBox .searchContent {
   width: 90%;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid gray;
 }
-.App .search-box .searchBtn {
+.App .searchBox .searchBtn {
   width: 24px;
   height: 24px;
   border: none;
@@ -95,7 +99,7 @@ body {
   cursor: pointer;
   margin-left: 3px;
 }
-.App .upper-text {
+.App .upperText {
   font-family: "Noto Sans KR", sans-serif;
   color: #000000cc;
   height: 50px;
@@ -146,14 +150,30 @@ figure {
 
 .text h2 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .text p {
   font-size: 14px;
   line-height: 24px;
 }
+.btnDetail {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 14px;
+  color: #747474;
+}
+.btnDetail:hover {
+  color: #fff;
+  background-color: #747474;
+  border: none;
+  transition: all 0.5s;
+}
 
-.btn-box {
+.btnBox {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -171,10 +191,12 @@ figure {
   margin-right: 20px;
   margin-bottom: 50px;
 }
+
 /* bottom box */
 /* nav */
 .bottomBox {
-  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
   height: 70px;
   background-color: #6aa864;
   color: #fff;
@@ -206,4 +228,36 @@ figure {
 }
 .bottomBox .iconSearch img {
   width: 100%;
+}
+
+/* Detail 컴포넌트 */
+
+#detail .App {
+  max-width: 768px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+#detail .App .title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  height: 70px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 40%;
+  position: relative;
+}
+
+.detailHeader img {
+  width: 30px;
+  height: 30px;
+}
+.aInfo {
+  padding: 10px;
+}
+.animalPicture {
+  border: 1px solid #ccc;
+  width: calc(100%-30%);
+  height: 500px;
 }

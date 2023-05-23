@@ -57,13 +57,13 @@ function Search() {
     <div>
       <div className="App">
         <div className="title">
-          <div className="icon-dog">
+          <div className="iconDog">
             <img src={dog} alt="dog" />
           </div>
           <p>구조 반려동물 조회</p>
         </div>
         {/* title */}
-        <div className="search-box">
+        <div className="searchBox">
           <form action="" method="get"></form>
           <input
             className="searchContent"
@@ -74,7 +74,7 @@ function Search() {
           <input type="button" name="searchBtn" className="searchBtn" />
         </div>
 
-        <div className="upper-text">
+        <div className="upperText">
           <p>Total: {totalCount}건</p>
           <p>
             Page: {pageNo} / {maxPages}
@@ -88,7 +88,7 @@ function Search() {
           <div className="loading">Loading...</div>
         )}
         {/* 페이징 */}
-        <div className="btn-box">
+        <div className="btnBox">
           <button id="btn" onClick={prevPage}>
             Pre
           </button>
@@ -97,8 +97,8 @@ function Search() {
           </button>
         </div>
         {/*btn-box */}
-        <Nav />
       </div>
+      <Nav />
     </div>
   );
 }
