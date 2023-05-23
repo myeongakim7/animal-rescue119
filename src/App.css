@@ -258,6 +258,6 @@ figure {
 }
 .animalPicture {
   border: 1px solid #ccc;
-  width: calc(100%-30%);
+  width: 100%;
   height: 500px;
 }
