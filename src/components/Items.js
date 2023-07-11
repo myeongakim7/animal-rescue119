@@ -1,31 +1,43 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Detail from "../pages/Detail";
 
 export default function Items({ animals }) {
-  console.log("Items = ", animals);
+  //   console.log(animals);
+
   return (
-    <div className="itemList">
-      {animals.map((animal, key) => {
+    <>
+      {animals.map((animals, key) => {
         return (
-          <div className="item" key={key}>
-            <figure>
-              <img src={animal.ty3Picture} alt={animal.ty3Kind} />
-            </figure>
-            <div className="text">
-              <h2>구조정보</h2>
-              <p>품종: {animal.ty3Kind}</p>
-              <p>성별 : {animal.ty3Sex}</p>
-              <p>구조일: {animal.ty3Date}</p>
-              <p>구조장소: {animal.ty3Place}</p>
-              <p>진행상황: {animal.ty3Process}</p>
-              <Link to="/detail" className="btnDetail" element={<Detail />}>
-                자세히 보기
-              </Link>
+          <>
+            <div className="text-box">
+              {/* {animals.cn} - 구조정보*/}
+              <div className="img-box">
+                <img
+                  className="animal-img"
+                  src={animals.ty3Picture}
+                  alt="img"
+                />
+              </div>
+              <div className="info">
+                <p>품종 : {animals.ty3Kind}</p>
+                <p>성별 : {animals.ty3Sex}</p>
+                <p>구조일: {animals.ty3Date}</p>
+                <p>구조장소 : {animals.ty3Place}</p>
+                {/* <p>상태 : {animals.ty3Process}</p> */}
+              </div>
+              {/* info */}
             </div>
-          </div>
+            {/* text-box */}
+          </>
         );
       })}
-    </div>
+      {/* 배열 중 하나만 선택할 경우 */}
+      {/* <h2>구조정보</h2>
+      {animals[0].cn}
+      <img src={animals[0].ty3Picture} alt="img" />
+      <p>성별 : {animals[0].ty3Sex}</p>
+      <p>품종 : {animals[0].ty3Kind}</p>
+      <p>포획장소 : {animals[0].ty3Place}</p>
+      <p>상태 : {animals[0].ty3Process}</p> */}
+    </>
   );
 }
