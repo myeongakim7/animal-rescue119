@@ -13,8 +13,7 @@ function Search() {
   const [rows, setRows] = useState(10); // 화면당 글 수
 
   const getAnimalData = () => {
-    const API_KEY =
-      "9Vvlf08PMcy3Rv%2BNyhHBfRDyrh4ghW9SV2WaM0hNQqnjY7CrDbP7Vicwy2i9OSNA7scEeCblqHdoPvFIY8RNUA%3D%3D";
+    const API_KEY = `9Vvlf08PMcy3Rv%2BNyhHBfRDyrh4ghW9SV2WaM0hNQqnjY7CrDbP7Vicwy2i9OSNA7scEeCblqHdoPvFIY8RNUA%3D%3D`;
     // docx 문서의 요청 메시지에서 '인증키' 부분에 일반 인증키 변수를 넣는다. 그리고 json 타입으로 데이터를 받기 위해 마지막에 resultType=json 코드를 추가해 적는다.
     const API_URL = `http://apis.data.go.kr/6260000/BusanPetAnimalInfoService/getPetAnimalInfo?serviceKey=${API_KEY}&numOfRows=${rows}&pageNo=1${pageNo}&resultType=json`;
 
@@ -47,6 +46,7 @@ function Search() {
 
   useEffect(() => {
     getAnimalData();
+    console.log("랜더링 된다!");
   }, [pageNo, totalCount]);
 
   console.log("animals = ", animals);
