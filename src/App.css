@@ -13,12 +13,12 @@ body {
 }
 
 #home {
-  max-width: 768px;
+  max-width: 375px;
   height: 100vh;
   margin: 0 auto;
 }
 .homeBox {
-  width: 768px;
+  max-width: 375px;
   height: 100vh;
   background-image: url(../src/images/home2.jpg);
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ body {
 /* Search */
 
 .App {
-  max-width: 768px;
+  max-width: 375px;
   margin: 0 auto;
   position: relative;
 }
@@ -195,7 +195,7 @@ figure {
 /* bottom box */
 /* nav */
 .bottomBox {
-  max-width: 768px;
+  max-width: 375px;
   margin: 0 auto;
   height: 70px;
   background-color: #6aa864;
@@ -231,12 +231,14 @@ figure {
 }
 
 /* Detail 컴포넌트 */
-
-#detail .App {
-  max-width: 768px;
+#detail {
+  max-width: 375px;
   height: 100vh;
+}
+#detail .App {
   margin: 0 auto;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 #detail .App .title {
   font-family: "Noto Sans KR", sans-serif;
@@ -245,19 +247,33 @@ figure {
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 40%;
-  position: relative;
+  gap: 25%;
 }
-
-.detailHeader img {
-  width: 30px;
-  height: 30px;
+#detail .pre {
+  margin-left: 10px;
 }
-.aInfo {
-  padding: 10px;
-}
-.animalPicture {
-  border: 1px solid #ccc;
+#detail .container {
   width: 100%;
-  height: 500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#detail .detailImg {
+  width: 320px;
+  height: 320px;
+}
+#detail .detailImg img {
+  width: 100%;
+  height: 100%;
+}
+#detail .detailBox {
+  width: 100%;
+  height: 100%;
+  padding: 8%;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#detail .detailBox p {
+  margin-bottom: 5px;
 }
