@@ -58,6 +58,7 @@ function App() {
   console.log("animals = ", animals);
   console.log("totalCount = ", totalCount);
   console.log("maxPages = ", maxPages);
+  console.log("rows =", rows);
 
   // AOS 초기화
   // useEffect(() => {
