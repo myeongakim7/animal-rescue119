@@ -73,14 +73,13 @@ body {
 }
 
 .App .searchBox {
+  /* border: 2px solid darkblue; */
   width: 90%;
   height: 30px;
   border-radius: 20px;
   background-color: #ecedf1;
   padding: 0 15px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
 }
 .App .searchBox .searchContent {
   width: 90%;
@@ -97,8 +96,9 @@ body {
   background-size: cover;
   background-position: center;
   cursor: pointer;
-  margin-left: 3px;
+  margin-left: 2px;
 }
+
 .App .upperText {
   font-family: "Noto Sans KR", sans-serif;
   color: #000000cc;
@@ -109,7 +109,7 @@ body {
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
   font-size: 14px;
-  margin: 0 6px;
+  margin: 0 12px;
 }
 
 figure {
