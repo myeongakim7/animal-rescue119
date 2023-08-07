@@ -13,6 +13,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.0.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,6 +43,5 @@
   "description": "<h2>부산 119 구조 반려동물 조회</h2> <p>demo:https://web-animal-rescue119-3a9t2bldtzerfu.sel3.cloudtype.app/</p> <h3>Before update</h3>   <p>공공 API의 데이터를 불러오기</p>   <p>개별 데이터로 보여줄 Item 컴퍼넌트 추가</p>   <p>map 반복문으로 Item 출력</p>",
   "main": "index.js",
   "author": "",
-  "license": "ISC",
-  "devDependencies": {}
+  "license": "ISC"
 }

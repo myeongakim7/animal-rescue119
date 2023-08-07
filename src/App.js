@@ -16,7 +16,7 @@ function App() {
   const [pageNo, setPageNo] = useState(1); // 페이지번호
   const [maxPages, setMaxPages] = useState(0); // 마지막 페이지
   const [rows, setRows] = useState(10); // 화면당 글 수
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(""); // 검색
 
   const getAnimalData = () => {
     const API_KEY = `9Vvlf08PMcy3Rv%2BNyhHBfRDyrh4ghW9SV2WaM0hNQqnjY7CrDbP7Vicwy2i9OSNA7scEeCblqHdoPvFIY8RNUA%3D%3D`;
@@ -53,13 +53,13 @@ function App() {
 
   useEffect(() => {
     getAnimalData();
-    console.log("랜더링 된다!");
   }, [pageNo, totalCount, search]);
 
   console.log("animals = ", animals);
   console.log("totalCount = ", totalCount);
   console.log("maxPages = ", maxPages);
   console.log("rows =", rows);
+  console.log("search=", search);
 
   // AOS 초기화
   // useEffect(() => {
@@ -79,13 +79,14 @@ function App() {
           element={
             <Search
               animals={animals}
+              setAnimals={setAnimals}
               totalCount={totalCount}
               pageNo={pageNo}
               setPageNo={setPageNo}
               maxPages={maxPages}
               rows={rows}
-              // // search={search}
-              // // setSearch={setSearch}
+              search={search}
+              setSearch={setSearch}
               prevPage={prevPage}
               nextPage={nextPage}
             />

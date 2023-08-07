@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Nav from "../components/Nav";
 import { Link } from "react-router-dom";
 import Pre from "../images/icon-pre.svg";
+import styled from "styled-components";
 
 function Detail({ animals }) {
   const { id } = useParams();
@@ -11,6 +12,24 @@ function Detail({ animals }) {
   console.log({ id });
   // console.log("detail:", animals);
   console.log({ animals });
+
+  const TableStyle = styled.div`
+    // border: 1px solid red;
+    border-collapse: collapse;
+
+    tr,
+    td {
+      padding: 7px;
+    }
+    table tr > td:first-child {
+      background-color: #e2e2e2;
+      width: 25%;
+      text-align: center;
+    }
+    table tr > td:nth-child(2) {
+      background-color: #f2f2f2;
+    }
+  `;
   return (
     <div id="detail">
       <div className="App">
@@ -27,12 +46,34 @@ function Detail({ animals }) {
           </div>
           {/* detailImg */}
           <div className="detailBox">
-            <p>구조정보 : {animals[id].sj}</p>
-            <p>구조일시 : {animals[id].ty3Date}</p>
-            <p>구조장소 : {animals[id].ty3Place}</p>
-            <p>종류 : {animals[id].ty3Kind}</p>
-            <p>성별 : {animals[id].ty3Sex}</p>
-            <p>처리현황 : {animals[id].ty3Process}</p>
+            <TableStyle>
+              <table>
+                <tr>
+                  <td>구조정보</td>
+                  <td>{animals[id].sj}</td>
+                </tr>
+                <tr>
+                  <td>구조일시</td>
+                  <td>{animals[id].ty3Date}</td>
+                </tr>
+                <tr>
+                  <td>종류</td>
+                  <td>{animals[id].ty3Kind}</td>
+                </tr>
+                <tr>
+                  <td>구조장소</td>
+                  <td>{animals[id].ty3Place}</td>
+                </tr>
+                <tr>
+                  <td>성별</td>
+                  <td>{animals[id].ty3Sex}</td>
+                </tr>
+                <tr>
+                  <td>처리현황</td>
+                  <td>{animals[id].ty3Process}</td>
+                </tr>
+              </table>
+            </TableStyle>
           </div>
           {/* detailBox*/}
         </div>
