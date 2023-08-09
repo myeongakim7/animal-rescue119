@@ -10,15 +10,16 @@ body {
 }
 :root {
   --main: #6aa864;
+  --detail-btn: #747474;
 }
 
 #home {
-  max-width: 375px;
+  max-width: 768px;
   height: 100vh;
   margin: 0 auto;
 }
 .homeBox {
-  max-width: 375px;
+  width: 100%;
   height: 100vh;
   background-image: url(../src/images/home2.jpg);
   background-repeat: no-repeat;
@@ -45,7 +46,7 @@ body {
 /* Search */
 
 .App {
-  max-width: 375px;
+  max-width: 768px;
   margin: 0 auto;
   position: relative;
 }
@@ -74,31 +75,33 @@ body {
 
 .App .searchBox {
   /* border: 2px solid darkblue; */
-  width: 90%;
+  width: 95%;
   height: 30px;
+  margin: 0 auto;
   border-radius: 20px;
   background-color: #ecedf1;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .App .searchBox .searchContent {
   width: 90%;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
 }
 .App .searchBox .searchBtn {
   width: 24px;
   height: 24px;
   border: none;
-  background-image: url(./images/icon-search-click.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   cursor: pointer;
-  margin-left: 2px;
+  margin-left: 10px;
 }
-
+.App .searchBox .searchBtn img {
+  width: 100%;
+  height: 100%;
+}
 .App .upperText {
   font-family: "Noto Sans KR", sans-serif;
   color: #000000cc;
@@ -145,7 +148,10 @@ figure {
 }
 
 .text {
-  padding: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text h2 {
@@ -157,20 +163,24 @@ figure {
   line-height: 24px;
 }
 .btnDetail {
+  width: 120px;
+  height: 40px;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 15px;
   text-decoration: none;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
-  color: #747474;
+  color: var(--detail-btn);
 }
 .btnDetail:hover {
   color: #fff;
-  background-color: #747474;
-  border: none;
-  transition: all 0.5s;
+  background-color: var(--detail-btn);
+  border: var(--detail-btn);
+  transition: all ease-in 0.4s;
 }
 
 .btnBox {
@@ -195,7 +205,7 @@ figure {
 /* bottom box */
 /* nav */
 .bottomBox {
-  max-width: 375px;
+  max-width: 768px;
   margin: 0 auto;
   height: 70px;
   background-color: #6aa864;
@@ -232,49 +242,56 @@ figure {
 
 /* Detail 컴포넌트 */
 #detail {
-  max-width: 375px;
+  max-width: 768px;
   height: 100vh;
   margin: 0 auto;
 }
 #detail .App {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 #detail .App .title {
+  width: 100%;
+  height: 70px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
-  height: 70px;
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 25%;
+  gap: 35%;
 }
 #detail .pre {
   margin-left: 10px;
 }
 #detail .container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 #detail .detailImg {
-  width: 320px;
-  height: 320px;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
 }
 #detail .detailImg img {
   width: 100%;
   height: 100%;
 }
 #detail .detailBox {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  padding: 8%;
+  display: flex;
+  justify-content: center;
   font-family: "Noto Sans KR", sans-serif;
 }
 #detail .detailBox p {
   margin-bottom: 5px;
+}
+#detail .detailBox table {
+  width: 100%;
 }

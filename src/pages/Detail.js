@@ -14,8 +14,9 @@ function Detail({ animals }) {
   console.log({ animals });
 
   const TableStyle = styled.div`
-    // border: 1px solid red;
     border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
 
     tr,
     td {
@@ -28,6 +29,7 @@ function Detail({ animals }) {
     }
     table tr > td:nth-child(2) {
       background-color: #f2f2f2;
+      width: calc(100%-25%);
     }
   `;
   return (

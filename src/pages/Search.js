@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Nav from "../components/Nav";
 import dog from "../images/icon-dog.svg";
 import Items from "../components/Items";
+import searchBtn from "../images/icon-search-click.svg";
 
 function Search({
   animals,
@@ -89,7 +90,9 @@ function Search({
               placeholder="품종 검색 "
               ref={inputRef}
             />
-            <button className="searchBtn" type="submit"></button>
+            <button className="searchBtn" type="submit">
+              <img src={searchBtn} alt="searchBtn" />
+            </button>
           </form>
         </div>
         {/* search-box */}
